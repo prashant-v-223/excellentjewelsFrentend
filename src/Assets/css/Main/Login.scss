@@ -1,0 +1,91 @@
+.login_wrapper {
+  .login_form_wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+    .btn_google {
+      border-radius: 50px;
+      border: 1px solid $borderColor;
+      box-shadow: 0px 18px 30px 0px rgba(0, 148, 217, 0.1);
+      background: $white;
+      font-size: 18px;
+      font-weight: 400;
+      width: 100%;
+      padding: 15px 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $textDark;
+      img {
+        margin-right: 10px;
+      }
+    }
+    .devider {
+      margin: 40px 0;
+      display: block;
+      text-align: center;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 13px;
+        width: 100%;
+        max-width: 220px;
+        height: 1px;
+        background: #aaa;
+        transform: translate(-50%, 0);
+        z-index: -1;
+      }
+      span {
+        padding: 0 15px;
+        background: #fff;
+        font-family: 'Mulish', sans-serif;
+      }
+    }
+  }
+  .login_img_wrap {
+    border-radius: 23px;
+    overflow: hidden;
+    // box-shadow: rgb(0 0 0 / 34%) 0px 2px 8px 0px;
+    img {
+      width: 100%;
+    }
+  }
+  &.signup_wrapper {
+    .login_form_wrapper {
+      max-width: inherit;
+      font-family: 'Mulish', sans-serif;
+      .google_wrapper {
+        max-width: 450px;
+        margin: 0 auto;
+      }
+      .supplyer_wrap {
+        max-width: 220px;
+        margin: 0 auto;
+      }
+    }
+    .react_custom_select_Wrapper {
+      height: 50px;
+    }
+    .css-t3ipsp-control {
+      .css-1fdsijx-ValueContainer {
+        padding: 0;
+      }
+    }
+    .css-t3ipsp-control,
+    .css-13cymwt-control {
+      height: 100%;
+    }
+  }
+}
+
+.text_hover {
+  color: $colorC;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.5s ease;
+  &:hover {
+    color: inherit;
+    transition: 0.5s ease;
+  }
+}
